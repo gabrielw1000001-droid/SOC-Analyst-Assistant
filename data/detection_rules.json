@@ -1,0 +1,22 @@
+{
+    "brute_force": {
+        "min_failed_attempts": 5,
+        "time_window_minutes": 5,
+        "description": "Numero minimo de tentativas de autenticacao falhas, para o mesmo usuario e mesma origem, dentro da janela de tempo definida, para caracterizar um possivel Brute Force."
+    },
+    "port_scanning": {
+        "min_distinct_ports": 5,
+        "time_window_minutes": 2,
+        "description": "Numero minimo de portas de destino distintas acessadas pela mesma origem, dentro da janela de tempo definida, para caracterizar uma possivel varredura de portas."
+    },
+    "suspicious_login": {
+        "sensitive_users": ["root", "administrator", "admin"],
+        "unusual_hour_start": 0,
+        "unusual_hour_end": 5,
+        "description": "Login bem-sucedido de um usuario sensivel e/ou realizado em horario considerado incomum (madrugada)."
+    },
+    "insufficient_data": {
+        "min_events_for_conclusion": 3,
+        "description": "Numero minimo de eventos relacionados necessarios para sustentar uma classificacao de severidade MEDIUM ou superior."
+    }
+}

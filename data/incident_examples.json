@@ -1,0 +1,25 @@
+{
+    "note": "Exemplos ilustrativos de incidentes gerados a partir de data/sample_auth.log. Todos os dados sao ficticios.",
+    "examples": [
+        {
+            "incident_id": "INC-EXAMPLE-001",
+            "type": "Brute Force",
+            "severity": "HIGH",
+            "source_ip": "192.168.1.50",
+            "affected_user": "admin",
+            "evidence": "12 tentativas de autenticacao falhas para o usuario 'admin' a partir do IP 192.168.1.50 em um intervalo de aproximadamente 2 minutos.",
+            "mitre_attack": ["T1110"],
+            "status": "UNDER INVESTIGATION"
+        },
+        {
+            "incident_id": "INC-EXAMPLE-002",
+            "type": "Port Scanning",
+            "severity": "MEDIUM",
+            "source_ip": "203.0.113.77",
+            "affected_user": null,
+            "evidence": "9 portas de destino distintas acessadas a partir do IP 203.0.113.77 em um intervalo de aproximadamente 12 segundos.",
+            "mitre_attack": ["T1046"],
+            "status": "UNDER INVESTIGATION"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "note": "Linha de base ficticia de comportamento de login por usuario, usada como referencia para identificar desvios (suspicious login). Dados simulados para fins educacionais.",
+    "known_user_baseline": {
+        "jsilva": {
+            "usual_ips": ["10.0.0.15", "10.0.0.16"],
+            "usual_hour_start": 7,
+            "usual_hour_end": 19
+        },
+        "mcosta": {
+            "usual_ips": ["172.16.0.40"],
+            "usual_hour_start": 8,
+            "usual_hour_end": 18
+        },
+        "root": {
+            "usual_ips": [],
+            "usual_hour_start": 8,
+            "usual_hour_end": 18
+        },
+        "admin": {
+            "usual_ips": ["192.168.1.10"],
+            "usual_hour_start": 8,
+            "usual_hour_end": 18
+        }
+    }
+}

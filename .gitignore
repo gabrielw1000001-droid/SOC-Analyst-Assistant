@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# Ambientes virtuais
+venv/
+.venv/
+env/
+
+# Relatorios gerados em tempo de execucao (mantemos a pasta, ignoramos o conteudo)
+reports/*.json
+!reports/.gitkeep
+
+# Arquivos de IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

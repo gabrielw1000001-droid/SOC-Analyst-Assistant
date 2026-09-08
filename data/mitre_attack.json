@@ -1,0 +1,22 @@
+{
+    "T1110": {
+        "name": "Brute Force",
+        "tactic": "Credential Access",
+        "description": "Adversarios podem tentar obter acesso a contas utilizando repetidas tentativas de autenticacao com credenciais desconhecidas ou adivinhadas."
+    },
+    "T1110.001": {
+        "name": "Brute Force: Password Guessing",
+        "tactic": "Credential Access",
+        "description": "Adversarios podem usar uma lista de senhas comuns para tentar acessar contas na ausencia de politicas de bloqueio."
+    },
+    "T1046": {
+        "name": "Network Service Discovery",
+        "tactic": "Discovery",
+        "description": "Adversarios podem tentar obter uma lista de servicos em execucao em hosts remotos, incluindo servicos que podem ser vulneraveis, atraves de varredura de portas."
+    },
+    "T1078": {
+        "name": "Valid Accounts",
+        "tactic": "Defense Evasion, Persistence, Privilege Escalation, Initial Access",
+        "description": "Adversarios podem obter e abusar de credenciais de contas existentes para obter acesso inicial, persistencia, escalonamento de privilegios ou evasao de defesa."
+    }
+}

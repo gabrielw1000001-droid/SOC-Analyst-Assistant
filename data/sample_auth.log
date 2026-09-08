@@ -1,0 +1,41 @@
+# ==========================================================================
+# ARQUIVO DE LOG SIMULADO — SOC Analyst Assistant
+# Todos os IPs, usuários e eventos abaixo são FICTÍCIOS e foram gerados
+# exclusivamente para fins de demonstração e teste desta ferramenta.
+# Nenhum dado real, sensível ou de produção está presente neste arquivo.
+# ==========================================================================
+
+# --- Cenário 1: Brute Force (mesmo usuário, mesmo IP, curto período) ---
+Sep 07 22:15:01 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45201 ssh2
+Sep 07 22:15:12 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45203 ssh2
+Sep 07 22:15:24 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45207 ssh2
+Sep 07 22:15:37 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45210 ssh2
+Sep 07 22:15:49 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45214 ssh2
+Sep 07 22:16:02 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45219 ssh2
+Sep 07 22:16:15 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45223 ssh2
+Sep 07 22:16:28 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45228 ssh2
+Sep 07 22:16:41 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45232 ssh2
+Sep 07 22:16:53 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45237 ssh2
+Sep 07 22:17:06 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45241 ssh2
+Sep 07 22:17:19 server sshd[1024]: Failed password for admin from 192.168.1.50 port 45246 ssh2
+
+# --- Cenário 2: Login normal (autenticação bem-sucedida, padrão esperado) ---
+Sep 07 09:02:11 server sshd[2048]: Accepted password for jsilva from 10.0.0.15 port 51122 ssh2
+
+# --- Cenário 3: Suspicious Login (login root bem-sucedido em horário atípico) ---
+Sep 07 03:47:55 server sshd[3081]: Accepted password for root from 198.51.100.23 port 52344 ssh2
+
+# --- Cenário 4: Port Scanning (mesmo host, múltiplas portas de destino em curto período) ---
+Sep 07 23:05:01 server firewall[4001]: Connection attempt from 203.0.113.77 to port 21 blocked
+Sep 07 23:05:03 server firewall[4001]: Connection attempt from 203.0.113.77 to port 22 blocked
+Sep 07 23:05:04 server firewall[4001]: Connection attempt from 203.0.113.77 to port 23 blocked
+Sep 07 23:05:06 server firewall[4001]: Connection attempt from 203.0.113.77 to port 25 blocked
+Sep 07 23:05:07 server firewall[4001]: Connection attempt from 203.0.113.77 to port 80 blocked
+Sep 07 23:05:09 server firewall[4001]: Connection attempt from 203.0.113.77 to port 443 blocked
+Sep 07 23:05:10 server firewall[4001]: Connection attempt from 203.0.113.77 to port 3306 blocked
+Sep 07 23:05:12 server firewall[4001]: Connection attempt from 203.0.113.77 to port 3389 blocked
+Sep 07 23:05:13 server firewall[4001]: Connection attempt from 203.0.113.77 to port 8080 blocked
+
+# --- Cenário 5: Eventos insuficientes para classificação (poucas falhas isoladas) ---
+Sep 07 14:22:10 server sshd[5099]: Failed password for mcosta from 172.16.0.40 port 33110 ssh2
+Sep 07 16:41:33 server sshd[5100]: Failed password for mcosta from 172.16.0.40 port 33221 ssh2
